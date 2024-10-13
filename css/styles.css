@@ -140,7 +140,7 @@ img{
 
 .main-information{
         background-color: #2e2f42;
-        height: 600px;
+        max-height: 600px;
 }      
         
 .main{
@@ -152,8 +152,10 @@ img{
         text-align: center;
         color: #fff;
         max-width: 496px;
-        margin: 0 auto 48px auto;
-        padding-top: 188px;
+        padding: 188px auto 0 auto;
+        margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 
@@ -168,13 +170,16 @@ img{
         background-color: #4D5AE5;
         cursor: pointer;
         height: 56px;
-        width: 169px;
-        display: flex;
+        min-width: 169px;
+        display: block;
         align-items: center;
-        margin: 0 auto;
         padding-left: 32px;
+        padding-right: 32px;
         border-radius: 4px;
         border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 188px;
 }
 
 .button:hover{
@@ -203,7 +208,7 @@ img{
 .values-ul{
         display: flex;
         gap: 24px;
-        width: cal((100% - 3 * 24px) / 4)
+        flex-basis: calc((100% - 3 * 24px) / 4)
 
 }
 
@@ -234,12 +239,10 @@ img{
         width: cal((100% - 3 * 24px) / 4)
 }
 
-/*
+
 .container-team{
-        max-width: 232px;
-        max-height: 56px;
+        padding: 32px 0;
 }
-*/ 
 
 .team{
         margin-bottom: 72px;
@@ -263,6 +266,7 @@ img{
 
 .list-team{
         background-color: #FFFFFF;
+        border-radius: 0px 0px 4px 4px;
 }
 .header-team{
         font-family: "Roboto", sans-serif;
@@ -295,8 +299,18 @@ img{
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
-        width: cal((100% - 2 * 24px) / 3)
+        width: calc((100% - 2 * 24px) / 3)
+        margin-bottom: 48px; 
 
+}
+
+.portfolio-ul:last-child{
+        margin-bottom: 0;
+}
+
+.container-portfolio{
+        padding: 32px 16px;
+        border: 1px solid #e7e9fc;
 }
 
 .portfolio{
@@ -304,7 +318,7 @@ img{
 }
 
 .header-portfolio{
-        font-family: var(--font-family);
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -331,7 +345,6 @@ img{
 .logo-footer{
       display: inline-block;
       margin-bottom: 16px;
-      margin-top: 100px;
 }
 
 .paragraph-footer{
@@ -342,11 +355,11 @@ img{
         color: #f4f4fd;
         max-width: 264px;
         max-height: 72px;
-        padding-bottom: 100px;
 }
 
 footer{
         background-color: #2e2f42;
+        padding: 100px 0;
 }
 
 .logo-span-footer{
